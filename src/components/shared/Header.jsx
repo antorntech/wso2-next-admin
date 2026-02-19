@@ -8,7 +8,7 @@ export default function Header({ session, onLogout, toggleSidebar }) {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleSidebar}
-          className="lg:hidden p-2 hover:bg-gray-100 rounded-lg"
+          className="lg:hidden hover:bg-gray-100 rounded-lg"
         >
           <Menu className="w-6 h-6 text-gray-600" />
         </button>
@@ -28,7 +28,7 @@ export default function Header({ session, onLogout, toggleSidebar }) {
 
         <button
           onClick={onLogout}
-          className="ml-2 p-2 text-gray-500 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+          className="cursor-pointer p-2 text-red-600 bg-red-50 hover:bg-red-100 rounded-lg transition-colors"
           title="Logout"
         >
           <LogOut className="w-5 h-5" />
